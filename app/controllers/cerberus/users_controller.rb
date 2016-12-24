@@ -20,7 +20,7 @@ module Cerberus
 
     def logout
       session[:user_id] = nil
-      redirect_to login_path
+      redirect_to cerberus.login_path
     end
   end
 end

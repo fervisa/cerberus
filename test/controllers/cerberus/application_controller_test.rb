@@ -2,6 +2,8 @@ require "test_helper"
 
 module Cerberus
   class BaseController < ApplicationController
+    include Authentication
+
     before_action :authenticate!
 
     def index
