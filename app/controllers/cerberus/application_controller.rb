@@ -1,5 +1,3 @@
-module Cerberus
-  class ApplicationController < ActionController::Base
-    protect_from_forgery with: :exception
-  end
+class Cerberus::ApplicationController < ::ApplicationController
+  protect_from_forgery with: :exception
 end
